@@ -56,7 +56,7 @@ public:
 		try {
 			//read configuration from input stream
 			int i_load_factor=0;
-
+			"$algorithm $count $thread $percent $tblper $capacity 2 1"
 			int curr_arg=1;
 			algName = argv[curr_arg++];
 			test_no				= CMDR::Integer::parseInt(argv[curr_arg++]);

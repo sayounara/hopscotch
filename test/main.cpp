@@ -515,7 +515,7 @@ public:
 		//save end benchmark time
 		const int end_counter = _gThreadEndCounter.getAndIncrement();
 		if(end_counter == (_gNumThreads-1))
-			_gEndTime = System::currentTimeMillis();
+			_gEndTime = System::currentTimeMillis();_gThreadResultAry
 		while((_gNumThreads) != _gThreadEndCounter.get()) {Thread::yield();}
 
 		//save thread benchmark result
